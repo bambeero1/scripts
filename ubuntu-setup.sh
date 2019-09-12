@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ "$EUID" -eq 0 ]
-  then echo "Execute again without sudo"
-  exit
-fi
 
 cd $HOME
 
