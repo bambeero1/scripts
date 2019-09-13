@@ -22,4 +22,4 @@ install_dev(){
 }
 
 install_docker
-install_dev-upg
+install_dev
