@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo performance > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+echo performance > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+echo performance > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+
+xrandr --newmode  "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+xrandr --addmode VGA-1 1368x768_60.00
+xrandr --output VGA-1 --primary --mode 1368x768_60.00
