@@ -17,8 +17,8 @@ install_dev(){
     # Install Docker
     sudo apt-get update
     sudo apt-get -yy install git python-dev python-pip python3-dev python3-pip gcc g++ make cmake virtualenv
-    sudo python3 -m pip install --upgrade pip
-    sudo python2 -m pip install --upgrade pip
+    sudo -H python3 -m pip install --upgrade pip
+    sudo -H python2 -m pip install --upgrade pip
 }
 
 install_docker
